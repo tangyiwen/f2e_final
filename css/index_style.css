@@ -1,0 +1,174 @@
+html{
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  font-family: "微軟正黑體","Microsoft JhengHei";
+  color: #1e785c;
+  text-align: left;
+}
+
+body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg_index.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/div_tri.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*btn*/
+.btn{
+  position: relative;
+  z-index: 1000;
+  text-align: right;
+  padding-top: 30px;
+  margin-right: 30px;
+}
+
+/*search*/
+.search_bar{
+  display: inline-block;
+}
+input{
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 120px;
+  height: 30px;
+  padding:5px 15px; background:#fff; border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/*search btn*/
+.search_btn{
+  margin-right: 15px;
+  cursor:pointer;
+}
+
+/*ham*/
+.hamburger {
+  margin-top: -30px;
+  font-size: 40px;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+  vertical-align: middle;
+  border: 0 none;
+  background: transparent;
+}
+/*+ Button height fix for Firefox*/
+.hamburger::-moz-focus-inner {
+  padding: 0;
+  border: 0 none;
+}
+/*+ Focus fix for Chrome*/
+.hamburger:focus {
+  outline: 0;
+}
+.hamburger:before,.hamburger:after {
+  content: "";
+}
+.hamburger:before,.hamburger .icon,.hamburger:after {
+  display: block;
+  width: 100%;
+  height: .2em;
+  margin: 0 0 .2em;
+  transition: transform .2s ease-in-out;
+  border-radius: .05em;
+  background: #FFF;
+}
+/*+ Styles for the active `.hamburger` icon*/
+.hamburger.active:before,.hamburger.active .icon,.hamburger.active:after {
+  background: #FFF;
+}
+/* + VERTICAL HAMBURGER*/
+.hamburger.hamburger-vertical.active {
+  transform: rotate(270deg);
+}
+/*+ CLOSE/CANCEL/CROSS*/
+.hamburger.hamburger-cancel.active .icon {
+  transform: scale(0);
+}
+.hamburger.hamburger-cancel.active:before {
+  transform: translateY(.4em) rotate(135deg);
+}
+.hamburger.hamburger-cancel.active:after {
+  transform: translateY(-.4em) rotate(-135deg);
+}
+/*btn end*/
+
+/*ham menu*/
+.hamburger_menu{
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg_index_ham.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+ul{
+  text-align: center;
+  list-style: none;
+  margin-top: 250px;
+}
+li{
+  margin-bottom: 70px;
+  font-size: 24px;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 50px;　
+}
+/*ham menu end*/
+
+/*slogan*/
+p{
+text-indent : -4em ;
+  text-shadow: 1px 1px 5px #000;
+  color: #fff;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-bottom: 0px;
+  line-height: 36px;
+  font-size: 20px;
+  letter-spacing: 20px;　
+}
+/*slogan*/
+
+/*logo*/
+logo img{
+  margin-top: 13%;
+  margin-left: 10%;
+  max-width: 474px;
+  width: 100%;
+}
+/*logo end*/
+
+
+.clear:after{
+  content: " ";
+  display: block;
+  clear: both;
+}
