@@ -5,6 +5,11 @@ html{
   font-family: "微軟正黑體","Microsoft JhengHei";
   color: #1e785c;
   text-align: left;
+  background-image: url(../img/bg_index.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 body{
@@ -24,7 +29,28 @@ body{
   background-image: url(../img/div_tri.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: left;
+  background-position:left center;
+  //background-size: cover;
+}
+
+@media screen and (max-height: 375px){/*tri < L*/
+  .container{
+    width: 100%;
+    height: 100%;
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 1024px){/*tri < L*/
+  .container{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/div_tri.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:left center;
+    background-size: cover;
+  }
 }
 
 /*btn*/
@@ -43,20 +69,22 @@ body{
 input{
   display: none;
   position: absolute;
-  top: 30px;
-  right: 120px;
+  top: 32px;
+  right: 168px;
   height: 30px;
   padding:5px 15px; background:#fff; border:0 none;
-  cursor:pointer;
+  cursor:text;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
-/*search btn*/
-.search_btn{
+/*search login btn*/
+.search_btn, .login_btn{
   margin-right: 15px;
   cursor:pointer;
 }
+
+
 
 /*ham*/
 .hamburger {
@@ -145,10 +173,28 @@ a{
   letter-spacing: 50px;　
 }
 /*ham menu end*/
+@media screen and (max-height: 600px){/*ham menu < L*/
+  ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    list-style: none;
+    margin-top: 100px;
+  }
+  li{
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 40px;　
+  }
+}
 
 /*slogan*/
 p{
-text-indent : -4em ;
+  text-indent : -4em ;
   text-shadow: 1px 1px 5px #000;
   color: #fff;
   margin-top: 5%;
@@ -160,15 +206,62 @@ text-indent : -4em ;
 }
 /*slogan*/
 
+@media screen and (max-height: 600px){/*slogan < L*/
+  p{
+    text-indent : -4em ;
+    text-shadow: 1px 1px 5px #000;
+    color: #fff;
+    margin-top: 0;
+    margin-left: 30%;
+    margin-bottom: 0px;
+    line-height: 36px;
+    font-size: 16px;
+    letter-spacing: 12px;　
+  }
+}
+@media screen and (max-width: 1000px){/*slogan < L*/
+  p{
+    text-indent : -4em ;
+    text-shadow: 1px 1px 5px #000;
+    color: #fff;
+    margin-top: 0;
+    margin-left: 30%;
+    margin-bottom: 0px;
+    line-height: 36px;
+    font-size: 16px;
+    letter-spacing: 12px;　
+  }
+}
+
 /*logo*/
 logo img{
   margin-top: 13%;
   margin-left: 10%;
   max-width: 474px;
+  max-height: 216px;
   width: 80%;
 }
 /*logo end*/
 
+@media screen and (max-height: 600px){/*logo < L*/
+  logo img{
+    margin-top: 5%;
+    margin-left: 10%;
+    max-width: 350px;
+    //max-height: 50%;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px){/*logo < L*/
+  logo img{
+    margin-top: 5%;
+    margin-left: 10%;
+    max-width: 350px;
+    //max-height: 50%;
+    width: 70%;
+  }
+}
 
 .clear:after{
   content: " ";
