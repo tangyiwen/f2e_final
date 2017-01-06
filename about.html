@@ -15,6 +15,7 @@
 </head>
 <body>
   <div class="bar"></div>
+  <span class="glyphicon glyphicon-chevron-up"></span>
   <logo><a href="index.html"><img src="img/logo_index.png" alt="logo"></a></logo>
   <div class="butn">
     <div  class="search_bar">
@@ -41,9 +42,9 @@
       <h3>des</h3>
       <p>blabla<br><br><br><br><br><br><br><br><br><br><br></p>
       <div class="row artist">
-        <img src="img/Clem Onojeghuo.jpg" alt="" class="col-xl-4">
-        <img src="img/Jaromír Kavan.jpg" alt="" class="col-xl-4">
-        <img src="img/Mario Klassen.jpg" alt="" class="col-xl-4">
+        <div class="col-sm-4 col-xs-12"><img src="img/Clem Onojeghuo.jpg" alt="" id="artist_1"></div>
+        <div class="col-sm-4 col-xs-12"><img src="img/Jaromír Kavan.jpg" alt="" id="artist_2"></div>
+        <div class="col-sm-4 col-xs-12"><img src="img/Mario Klassen.jpg" alt="" id="artist_3"></div>
       </div>
     </div>
     <div>
@@ -65,6 +66,7 @@
 
   <!-- log -->
   <div  class="login">
+    <span class="glyphicon glyphicon-remove"></span>
     <img src="img/img_login.png" alt="" class="leave_login">
     <form action="#">
       <div>
@@ -80,7 +82,7 @@
       <!-- SignIn/SignOut Button -->
     <button id="btnSignIn">Sign In</button>
     <button id="btnSignUp">Sign Up</button>
-    <button id ="btnSignOut">Sign Out</button>
+    <button id="btnSignOut">Sign Out</button>
   </div>
   <!-- log -->
 
@@ -97,16 +99,47 @@
 
   <!-- artist work -->
   <div class="works">
-    <div>
-
+    <div id="works_1">
+      <span class="glyphicon glyphicon-remove"></span>
+      <img src="img/Clem Onojeghuo.jpg" alt="">
+      <h3>Clem Onojeghuo</h3>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12"><img src="img/Clem Onojeghuo_1.jpg" alt=""></div>
+        <div class="col-lg-6 col-xs-12"><img src="img/Clem Onojeghuo_2.jpg" alt=""></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12"><img src="img/Clem Onojeghuo_3.jpg" alt=""></div>
+        <div class="col-lg-6 col-xs-12"><img src="img/Clem Onojeghuo_4.jpg" alt=""></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12"><img src="img/Clem Onojeghuo_5.jpg" alt=""></div>
+      </div>
+    </div>    <!-- 001 -->
+    <div id="works_2">
+      <span class="glyphicon glyphicon-remove"></span>
+      <img src="img/Jaromír Kavan.jpg" alt="">
+      <h3>Jaromír Kavan</h3>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12"><img src="img/Jaromír Kavan_1.jpg" alt=""></div>
+        <div class="col-lg-6 col-xs-12"><img src="img/Jaromír Kavan_2.jpg" alt=""></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12"><img src="img/Jaromír Kavan_3.jpg" alt=""></div>
+      </div>
+    </div>    <!-- 002 -->
+    <div id="works_3">
+      <span class="glyphicon glyphicon-remove"></span>
+      <img src="img/Mario Klassen.jpg" alt="">
+      <h3>Mario Klassen</h3>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12"><img src="img/Mario Klassen_1.jpg" alt=""></div>
+        <div class="col-lg-6 col-xs-12"><img src="img/Mario Klassen_2.jpg" alt=""></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12"><img src="img/Mario Klassen_3.jpg" alt=""></div>
+      </div>
     </div>
-    <div>
-
-    </div>
-    <div>
-      
-    </div>
-  </div>
+  </div>  <!-- 003 -->
   <!-- artist work -->
 
   <script src="js/jquery.js"></script>
