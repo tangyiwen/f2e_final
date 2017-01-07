@@ -4,6 +4,8 @@ html{
   font-family: "微軟正黑體","Microsoft JhengHei";
   color: #1e785c;
   text-align: center;
+  line-height: 36px;
+  letter-spacing: 3px;
 }
 
 body,input,button,select,textarea{
@@ -25,7 +27,7 @@ body{
   cursor: pointer;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px 15px 15px 18px;
+  padding: 13px 12px 15px 18px;
   border-radius: 50%;
 }
 @media screen and (max-width:768px) {
@@ -92,24 +94,29 @@ logo img{
 }
 
 /*search*/
-.search_bar{
+#___gcse_0{
   display: inline-block;
-}
-.search_bar input[type="text"]{
   display: none;
   position: absolute;
   top: 15px;
-  right: 145px;
-  height: 30px;
-  padding:5px 15px;
-  background:#fff;
+  right: 170px;
+  height: 50px;
+//  padding:5px 15px;
+//  background:#fff;
+  width: 200px;
   border:0 none;
   cursor:text;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
+#___gcse_0>div{
+  padding: 0;
+}
+.search_bar input[type="text"]{
+
+}
 @media screen and (max-width: 1024px){
-  .search_bar input[type="text"]{
+  #___gcse_0 /* input[type="text"]*/{
     position: absolute;
     height: 30px;
     top: 10px;
@@ -330,6 +337,23 @@ a:hover{
   width: 50%;
   padding: 50px;
 }
+@media screen and (max-width: 768px){
+  .banner_p{
+    width: 80%;
+    right: 10%;
+    left: 10%;
+  }
+}
+.banner_p p{
+  line-height: 24px;
+  font-size: 14px;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .banner_p span{
   font-size: 20px;
@@ -343,7 +367,15 @@ a:hover{
   color: #555;
   padding-top: 50px;
   padding-bottom: 20px;
+  font-size: 14px;
+  width: 50%;
 }
+.container p{
+  line-height: 24px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
 .container div{
   padding-top: 20px;
   padding-bottom: 40px;
@@ -352,8 +384,8 @@ a:hover{
 .artist{
   text-align: center;
   width: 100%;
-  padding-left: 150px;
-  padding-right: 150px;
+  //padding-left: 150px;
+  //padding-right: 150px;
 }
 @media screen and (max-width:768px) {
   .artist{
@@ -372,7 +404,6 @@ a:hover{
 
 /*work*/
 .works{
-  overflow-y: scroll;
   color: #fff;
 }
 #works_1,#works_2,#works_3{
@@ -380,7 +411,7 @@ a:hover{
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   z-index: 1100;
   top: 0;
@@ -405,7 +436,8 @@ a:hover{
 .works .row img{
   padding: 0;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .works .glyphicon-remove{
   position: fixed;
