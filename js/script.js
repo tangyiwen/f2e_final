@@ -56,6 +56,24 @@ $(document).ready(function(){
   ga('create', 'UA-89930154-1', 'auto');
   ga('send', 'pageview');
 
+ /*FB*/
+ window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '387247178289384',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+(function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+
+
 
 
   $(window).scroll(function () { /*scroll + bar*/
