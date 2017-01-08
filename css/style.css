@@ -448,7 +448,7 @@ logo img{
 .row{
   overflow: hidden;
 }
-.works .row img{
+.works_img{
   padding: 0;
   width: 100%;
   margin-top: 20px;
