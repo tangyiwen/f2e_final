@@ -9,9 +9,20 @@
   <!-- bookstrap -->
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Roboto Font -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
   <!-- local -->
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/firebase.js"></script>
 </head>
 <body>
   <div class="bar"></div>
@@ -89,6 +100,8 @@
     <button id="btnSignIn">Sign In</button>
     <button id="btnSignUp">Sign Up</button>
     <button id="btnSignOut">Sign Out</button>
+    <!-- Sign Information -->
+    <div class="mdl-card__supporting-text" id="sign-info">No one login...</div>
   </div>
   <!-- log -->
 
@@ -102,8 +115,10 @@
     </ul>
   </nav>
   <!-- hambuger -->
-  <!-- <a href="https://developers.facebook.com/docs/sharing/reference/share-dialog"></a>
-  fb share -->
+
+  <!-- <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2F&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+  https://developers.facebook.com/docs/plugins/share-button/ -->
+
   <!-- artist work -->
   <div class="works">
     <div id="works_1">
@@ -111,15 +126,45 @@
       <img src="img/Clem Onojeghuo.jpg" alt="">
       <h3>Clem Onojeghuo</h3>
       <div class="row">
-        <div class="col-lg-6 col-xs-12"><img src="img/Clem Onojeghuo_1.jpg" alt="" class="works_img"></div>
-        <div class="col-lg-6 col-xs-12"><img src="img/Clem Onojeghuo_2.jpg" alt="" class="works_img"></div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Clem Onojeghuo_1.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num0"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FClem%2520Onojeghuo_1.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Clem Onojeghuo_2.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num1"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FClem%2520Onojeghuo_2.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-xs-12"><img src="img/Clem Onojeghuo_3.jpg" alt="" class="works_img"></div>
-        <div class="col-lg-6 col-xs-12"><img src="img/Clem Onojeghuo_4.jpg" alt="" class="works_img"></div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Clem Onojeghuo_3.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num2"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FClem%2520Onojeghuo_3.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Clem Onojeghuo_4.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num3"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FClem%2520Onojeghuo_4.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-xs-12"><img src="img/Clem Onojeghuo_5.jpg" alt="" class="works_img"></div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Clem Onojeghuo_5.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num4"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FClem%2520Onojeghuo_5.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
       </div>
     </div>    <!-- 001 -->
     <div id="works_2">
@@ -127,11 +172,29 @@
       <img src="img/Jaromír Kavan.jpg" alt="">
       <h3>Jaromír Kavan</h3>
       <div class="row">
-        <div class="col-lg-6 col-xs-12"><img src="img/Jaromír Kavan_1.jpg" alt="" class="works_img"></div>
-        <div class="col-lg-6 col-xs-12"><img src="img/Jaromír Kavan_2.jpg" alt="" class="works_img"></div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Jaromír Kavan_1.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num5"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FJarom%25C3%25ADr%2520Kavan_1.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Jaromír Kavan_2.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num6"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FJarom%25C3%25ADr%2520Kavan_2.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-xs-12"><img src="img/Jaromír Kavan_3.jpg" alt="" class="works_img"></div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Jaromír Kavan_3.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num7"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FJarom%25C3%25ADr%2520Kavan_3.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
       </div>
     </div>    <!-- 002 -->
     <div id="works_3">
@@ -139,11 +202,29 @@
       <img src="img/Mario Klassen.jpg" alt="">
       <h3>Mario Klassen</h3>
       <div class="row">
-        <div class="col-lg-6 col-xs-12"><img src="img/Mario Klassen_1.jpg" alt="" class="works_img"></div>
-        <div class="col-lg-6 col-xs-12"><img src="img/Mario Klassen_2.jpg" alt="" class="works_img"></div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Mario Klassen_1.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num8"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FMario%2520Klassen_1.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Mario Klassen_2.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num9"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FMario%2520Klassen_2.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-xs-12"><img src="img/Mario Klassen_3.jpg" alt="" class="works_img"></div>
+        <div class="col-lg-6 col-xs-12 heart_target">
+          <img src="img/Mario Klassen_3.jpg" alt="" class="works_img">
+          <div class="hearteare">
+            <img src="img/heart_line.png" alt="" class="heart" /><p class="num10"></p>
+          </div>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Ftangyiwen.github.io%2Ff2e_final%2Fimg%2FMario%2520Klassen_3.jpg&layout=button_count&size=small&mobile_iframe=true&appId=387247178289384&width=65&height=20" width="65" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
       </div>
     </div>
   </div>  <!-- 003 -->
