@@ -12,6 +12,9 @@ body,input,button,select,textarea{
 font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
 font-size:108%;
 }
+h3,h5{
+font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+}
 
 body{
   width: 100%;
@@ -346,7 +349,7 @@ logo img:hover{
 
 .banner_p{
   position: absolute;
-  top: 200px;
+  top: 150px;
   right: 25%;
   left: 25%;
   text-align: center;
@@ -365,6 +368,7 @@ logo img:hover{
 }
 .banner_p p{
   line-height: 24px;
+  letter-spacing: 2px;
   font-size: 14px;
   max-width: 400px;
   width: 100%;
@@ -399,7 +403,8 @@ logo img:hover{
   }
 }
 .container p{
-  line-height: 24px;
+  line-height: 30px;
+  letter-spacing: 2px;
   margin-top: 50px;
   margin-bottom: 20px;
 }
@@ -442,6 +447,10 @@ logo img:hover{
 .artist img:hover{
   border-radius: 0%;
   box-shadow: 0 0 5px black;
+}
+
+.container td{
+  padding: 20px;
 }
 /*content*/
 
@@ -505,6 +514,8 @@ footer{
   background-color: #bbb;
   padding-top: 40px;
   padding-bottom: 20px;
+  color: #888;
+  margin-top: 100px;
 }
 /*footer*/
 
