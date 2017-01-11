@@ -94,7 +94,7 @@ logo img:hover{
   background-color: rgba(0, 0, 0, 0.5);
 //  border-radius: 50%;
 //  box-shadow: 0 0 3px black;
-  padding: 2px;
+  padding: 0 3px;
 }
 
 @media screen and (max-width: 1024px){
@@ -128,8 +128,8 @@ logo img:hover{
 #___gcse_0>div{
   padding: 0;
 }
-.search_bar input[type="text"]{
-
+.gsc-search-button input[type="image"]{
+  padding: 0px;
 }
 @media screen and (max-width: 1024px){
   #___gcse_0 /* input[type="text"]*/{
