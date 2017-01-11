@@ -60,7 +60,7 @@ logo img:hover{
     position: fixed;
     z-index: 1000;
     left:0px;
-    height: 35px;
+    height: 40px;
     margin-top: 10px;
     margin-left: 5px;
   }
@@ -79,7 +79,7 @@ logo img:hover{
 }
 @media screen and (max-width:1024px) {
   .bar{
-    height: 50px;
+    height: 60px;
   }
 }
 
@@ -149,7 +149,7 @@ logo img:hover{
 }
 @media screen and (max-width: 1024px){
   .search_btn, .login_btn{
-    height: 30px;
+    height: 40px;
   }
 }
 
@@ -234,7 +234,7 @@ logo img:hover{
 }
 @media screen and (max-width: 1024px){
   .hamburger{
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 /*+ Button height fix for Firefox*/
