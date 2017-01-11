@@ -398,7 +398,7 @@ logo img:hover{
   font-size: 14px;
   width: 50%;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
   .container{
     width: 80%;
   }
